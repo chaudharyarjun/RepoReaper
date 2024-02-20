@@ -14,6 +14,7 @@ Clone the repository and install the required dependencies:
 ```bash
 git clone https://github.com/YourUsername/RepoReaper.git
 cd RepoReaper
+pip install -r requirements.txt
 chmod +x RepoReaper.py
 ```
 
