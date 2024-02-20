@@ -14,8 +14,28 @@ Clone the repository and install the required dependencies:
 ```bash
 git clone https://github.com/YourUsername/RepoReaper.git
 cd RepoReaper
-chmod +x RepoReaper.py```
+chmod +x RepoReaper.py
+```
 
 ## Usage 
+RepoReaper is executed from the command line and will prompt for the path to a file containing a list of domains or subdomains to be scanned.
+
+To start RepoReaper, simply run:
+```bash
+./RepoReaper.py
+  or
+python3 RepoReaper.py
+```
+Upon execution, RepoReaper will ask for the path to the file containing the domains or subdomains:
+Enter the path of the file containing domains
+
+Provide the path to your text file when prompted. The file should contain one domain or subdomain per line, like so:
+```bash
+example.com
+subdomain.example.com
+anotherdomain.com
+```
+RepoReaper will then proceed to scan the provided domains or subdomains for exposed .git repositories and report its findings.
+
 
 
