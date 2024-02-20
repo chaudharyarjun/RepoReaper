@@ -35,8 +35,8 @@ def check_git_exposed(url):
         
         if response.status_code == 200 and 'ref: ' in response.text:
             return True
-    except:
-        pass
+    except requests.exceptions.RequestException as e:
+        print(colored(f"[Skipping] Request Failed for {url}", 'yellow'))
     
     return False
 
@@ -48,10 +48,11 @@ def main():
     exposed_count = 0
     for url in urls:
         if check_git_exposed(url):
+           
             print(colored(f"[+] {url} exposes .git file.", 'green'))
             exposed_count += 1
         else:
-            print(colored(f"[Skipping] Request Failed for {url}.", 'yellow'))
+            print(colored(f"[-] {url} does not expose .git file.", 'red'))
 
     print("\n")
     cprint(f"RepoReaper has finished its scan. {exposed_count} out of {len(urls)} domains exposed .git files.", 'cyan')
