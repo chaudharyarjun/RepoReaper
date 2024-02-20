@@ -36,6 +36,7 @@ subdomain.example.com
 anotherdomain.com
 ```
 RepoReaper will then proceed to scan the provided domains or subdomains for exposed .git repositories and report its findings.
+![Repo_Reaper](https://github.com/chaudharyarjun/RepoReaper/assets/66072013/906163b5-1050-41c8-963d-9c0efdd0aba7)
 
 # Disclaimer
 
