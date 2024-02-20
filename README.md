@@ -37,5 +37,8 @@ anotherdomain.com
 ```
 RepoReaper will then proceed to scan the provided domains or subdomains for exposed .git repositories and report its findings.
 
+# Disclaimer
+
+This tool is intended for educational purposes and security research only. The user assumes all responsibility for any damages or misuse resulting from its use.
 
 
